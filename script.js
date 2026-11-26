@@ -1,5 +1,5 @@
 // Укажи Twitch-ник канала латиницей в кавычках.
-const TWITCH_CHANNEL = "YOUR_TWITCH_CHANNEL";
+const TWITCH_CHANNEL = "kachelytv";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
