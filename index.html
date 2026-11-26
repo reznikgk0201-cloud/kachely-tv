@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170d25">
+  <meta name="description" content="Телеканал Качели — прямой эфир, мультфильмы, фильмы, ИИ-видео и развлечения.">
+  <title>Телеканал Качели</title>
+  <link rel="preconnect" href="https://player.twitch.tv">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Качели — главная">
+      <span class="brand-icon">К</span><span>ТЕЛЕКАНАЛ <b>КАЧЕЛИ</b></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav id="main-nav">
+      <a href="#live">Прямой эфир</a><a href="#shows">Разделы</a>
+      <a href="#schedule">Программа</a><a href="#about">О канале</a>
+    </nav>
+    <a class="watch-button" href="#live">Смотреть эфир</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="live-dot"></span> ТВОЁ ИНТЕРНЕТ-ТЕЛЕВИДЕНИЕ</span>
+        <h1>Переключайся<br>на <span>Качели</span></h1>
+        <p>Мультфильмы, фильмы, ИИ-видео и развлечения — всё в одном месте.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#live">▶ Смотреть онлайн</a>
+          <a class="secondary-button" href="#schedule">Программа передач</a>
+        </div>
+        <div class="hero-meta"><span>✦ Собственные проекты</span><span>✦ Онлайн-эфиры</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="tv"><div class="antenna"></div><div class="tv-screen"><span>КАЧЕЛИ</span><small>ТВОЙ ЭФИР</small></div><div class="tv-knob"></div></div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span>
+      </div>
+    </section>
+
+    <section class="section live-section" id="live">
+      <div class="section-heading">
+        <div><span class="eyebrow">ПОДКЛЮЧАЙСЯ</span><h2><span class="live-dot"></span> Прямой эфир</h2></div>
+        <span class="live-label">TWITCH · kachelytv</span>
+      </div>
+      <div class="player-wrap">
+        <div id="player-placeholder" class="player-placeholder">
+          <div class="play-symbol">▶</div><h3>Эфир пока не запущен</h3>
+          <p>Когда канал kachelytv начнёт трансляцию на Twitch, она появится здесь.</p>
+          <a class="secondary-button" href="https://www.twitch.tv/kachelytv" target="_blank" rel="noopener">Открыть Twitch</a>
+        </div>
+        <iframe id="twitch-player" title="Прямой эфир телеканала Качели" allowfullscreen="true"
+          scrolling="no" allow="autoplay; fullscreen" loading="lazy"></iframe>
+      </div>
+      <p class="player-note">Для просмотра прямо на сайте разрешите воспроизведение. Если плеер не загрузился, откройте канал на Twitch.</p>
+    </section>
+
+    <section class="section" id="shows">
+      <div class="section-heading"><div><span class="eyebrow">ВЫБИРАЙ СВОЁ</span><h2>Наши разделы</h2></div><span class="section-side-note">Новые выпуски будут появляться здесь</span></div>
+      <div class="category-grid">
+        <a class="category-card cartoons" href="#catalog-cartoons"><span class="category-icon">🎨</span><h3>Мультфильмы</h3><p>Анимация и мультприключения</p><span class="card-link">Открыть раздел ↗</span></a>
+        <a class="category-card movies" href="#catalog-movies"><span class="category-icon">🎬</span><h3>Фильмы</h3><p>Кино для уютного вечера</p><span class="card-link">Открыть раздел ↗</span></a>
+        <a class="category-card ai" href="#catalog-ai"><span class="category-icon">🤖</span><h3>ИИ-видео</h3><p>Необычные миры и эксперименты</p><span class="card-link">Открыть раздел ↗</span></a>
+        <a class="category-card shows" href="#catalog-shows"><span class="category-icon">🎉</span><h3>Передачи</h3><p>Развлечения и специальные эфиры</p><span class="card-link">Открыть раздел ↗</span></a>
+      </div>
+    </section>
+
+    <section class="section catalog-section" id="catalog-cartoons">
+      <div class="section-heading"><div><span class="eyebrow">РАЗДЕЛ 01</span><h2>Мультфильмы</h2></div></div>
+      <div class="empty-panel"><span>🎨</span><div><h3>Скоро на Качелях</h3><p>Здесь появятся мультфильмы, созданные нами или опубликованные с разрешения правообладателей.</p></div><span class="soon-tag">СКОРО</span></div>
+    </section>
+    <section class="section catalog-section" id="catalog-movies">
+      <div class="section-heading"><div><span class="eyebrow">РАЗДЕЛ 02</span><h2>Фильмы</h2></div></div>
+      <div class="empty-panel"><span>🎬</span><div><h3>Кинозал готовится к открытию</h3><p>В этом разделе будут фильмы, доступные для легального показа.</p></div><span class="soon-tag">СКОРО</span></div>
+    </section>
+    <section class="section catalog-section" id="catalog-ai">
+      <div class="section-heading"><div><span class="eyebrow">РАЗДЕЛ 03</span><h2>ИИ-видео</h2></div></div>
+      <div class="empty-panel"><span>🤖</span><div><h3>Творчество без границ</h3><p>Подборки собственных ИИ-роликов и экспериментов.</p></div><span class="soon-tag">СКОРО</span></div>
+    </section>
+    <section class="section catalog-section" id="catalog-shows">
+      <div class="section-heading"><div><span class="eyebrow">РАЗДЕЛ 04</span><h2>Передачи</h2></div></div>
+      <div class="empty-panel"><span>🎉</span><div><h3>Скоро в программе</h3><p>Развлекательные шоу, специальные выпуски и тематические эфиры.</p></div><span class="soon-tag">СКОРО</span></div>
+    </section>
+
+    <section class="section schedule-section" id="schedule">
+      <div class="section-heading"><div><span class="eyebrow">НЕ ПРОПУСТИ</span><h2>Программа передач</h2></div><span class="section-side-note">Демонстрационное расписание</span></div>
+      <div class="schedule-list">
+        <div class="schedule-item"><time>10:00</time><span class="schedule-icon">🌈</span><div><b>Утро на Качелях</b><small>Развлекательный блок</small></div><span class="schedule-type">ШОУ</span></div>
+        <div class="schedule-item"><time>13:00</time><span class="schedule-icon">🎨</span><div><b>Мультчас</b><small>Анимационная подборка</small></div><span class="schedule-type">МУЛЬТФИЛЬМЫ</span></div>
+        <div class="schedule-item"><time>16:00</time><span class="schedule-icon">🤖</span><div><b>Мир ИИ</b><small>Видео и творческие эксперименты</small></div><span class="schedule-type">ИИ-ВИДЕО</span></div>
+        <div class="schedule-item"><time>19:00</time><span class="schedule-icon">📺</span><div><b>Вечерний эфир</b><small>Прямой эфир на Twitch — если запланирован</small></div><span class="schedule-type">ЭФИР</span></div>
+      </div>
+      <p class="schedule-disclaimer">Время указано как пример и не означает, что эти передачи уже выходят в эфир. Фактическое расписание будет обновляться администрацией канала.</p>
+    </section>
+
+    <section class="about" id="about">
+      <span class="eyebrow">О НАС</span><h2>Устраивайтесь поудобнее!</h2>
+      <p>«Качели» — развлекательный интернет-телеканал. Здесь собраны прямые эфиры, собственные видео, шоу и творческие проекты. Заходите на сайт и следите за обновлениями!</p>
+      <a class="primary-button" href="https://www.twitch.tv/kachelytv" target="_blank" rel="noopener">Наш Twitch ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#home"><span class="brand-icon">К</span><span>ТЕЛЕКАНАЛ <b>КАЧЕЛИ</b></span></a>
+    <span>© <span id="year"></span> Телеканал Качели</span>
+    <a href="#home" class="to-top">Наверх ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
