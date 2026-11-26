@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170d25">
+  <meta name="description" content="Телеканал Качели — мультфильмы, фильмы, ИИ-видео и развлечения.">
+  <title>Телеканал Качели</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Качели — главная">
+      <span class="brand-icon">К</span>
+      <span>ТЕЛЕКАНАЛ <b>КАЧЕЛИ</b></span>
+    </a>
+    <nav>
+      <a href="#live">Прямой эфир</a>
+      <a href="#shows">Разделы</a>
+      <a href="#schedule">Программа</a>
+      <a href="#about">О канале</a>
+    </nav>
+    <a class="watch-button" href="#live">Смотреть эфир</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="live-dot"></span> ТВОЁ ИНТЕРНЕТ-ТЕЛЕВИДЕНИЕ</span>
+        <h1>Переключайся<br>на <span>Качели</span></h1>
+        <p>Мультфильмы, фильмы, ИИ-видео и развлечения — всё в одном месте.</p>
+        <a class="primary-button" href="#live">▶ Смотреть онлайн</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="tv">
+          <div class="antenna"></div>
+          <div class="tv-screen"><span>КАЧЕЛИ</span><small>ТВОЙ ЭФИР</small></div>
+          <div class="tv-knob"></div>
+        </div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span>
+      </div>
+    </section>
+
+    <section class="section live-section" id="live">
+      <div class="section-heading">
+        <div><span class="eyebrow">СЕЙЧАС В ЭФИРЕ</span><h2><span class="live-dot"></span> Прямой эфир</h2></div>
+        <span class="live-label">TWITCH LIVE</span>
+      </div>
+      <div class="player-wrap">
+        <div id="player-placeholder" class="player-placeholder">
+          <div class="play-symbol">▶</div>
+          <h3>Эфир скоро начнётся</h3>
+          <p>Когда телеканал выйдет в эфир на Twitch, трансляция появится здесь.</p>
+        </div>
+        <iframe id="twitch-player" title="Прямой эфир телеканала Качели"
+          allowfullscreen="true" scrolling="no"
+          allow="autoplay; fullscreen"></iframe>
+      </div>
+      <p class="player-note">Если плеер не отображается, проверьте, что трансляция запущена на Twitch.</p>
+    </section>
+
+    <section class="section" id="shows">
+      <div class="section-heading"><div><span class="eyebrow">ЧТО ПОСМОТРЕТЬ</span><h2>Наши разделы</h2></div></div>
+      <div class="category-grid">
+        <article class="category-card cartoons"><span class="category-icon">🎨</span><h3>Мультфильмы</h3><p>Анимация и мультприключения</p></article>
+        <article class="category-card movies"><span class="category-icon">🎬</span><h3>Фильмы</h3><p>Кино для уютного вечера</p></article>
+        <article class="category-card ai"><span class="category-icon">🤖</span><h3>ИИ-видео</h3><p>Необычные миры и эксперименты</p></article>
+        <article class="category-card shows"><span class="category-icon">🎉</span><h3>Передачи</h3><p>Развлечения и специальные эфиры</p></article>
+      </div>
+      <p class="coming-soon">Разделы наполняются. Следите за обновлениями!</p>
+    </section>
+
+    <section class="section schedule-section" id="schedule">
+      <div class="section-heading"><div><span class="eyebrow">НЕ ПРОПУСТИ</span><h2>Программа передач</h2></div></div>
+      <div class="schedule-empty"><span>🗓️</span><div><h3>Расписание скоро появится</h3><p>Здесь будет опубликована программа будущих эфиров.</p></div></div>
+    </section>
+
+    <section class="about" id="about">
+      <span class="eyebrow">О НАС</span>
+      <h2>Устраивайтесь поудобнее!</h2>
+      <p>«Качели» — развлекательный интернет-телеканал. Заходите на сайт, следите за расписанием и смотрите прямые эфиры.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-icon">К</span><span>ТЕЛЕКАНАЛ <b>КАЧЕЛИ</b></span></a><span>© <span id="year"></span> Телеканал Качели</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
